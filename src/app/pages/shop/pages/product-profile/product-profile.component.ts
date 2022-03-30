@@ -36,11 +36,14 @@ export class ProductProfileComponent implements OnInit {
   }
 
   onDelete(id:any){
-    window.confirm("Are you sure you want to delete this element?");
-    if (confirm("Delete completed")) {
-      this.shopService.deleteShop(id).subscribe();
-      window.history.back();
-      //this.router.navigate(['/shop']);
+    if (confirm("Do you want to delete this item?")) {
+      window.confirm("Product Deleted");
+      this.shopService.deleteShop(id).subscribe(()=>{
+        this.router.navigate([`/skaters`])});      //window.history.back();
+    }else{
+      window.confirm("Delete Cancelled");
+
     }
   }
-}
+
+  }
