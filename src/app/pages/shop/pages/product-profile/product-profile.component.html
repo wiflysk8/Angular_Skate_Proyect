@@ -1,0 +1,9 @@
+ <section class="c-profile" *ngIf=item>
+  <p class="b-text">{{item.name}}</p>
+  <img src="{{item.image}}" alt="">
+  <p class="b-text" style="color:red">Price: 59,99$</p>  <div>
+  <img src="../../../../assets/trash.png" alt="trash" class="b-trash" (click)="onDelete(item._id)">
+  </div>
+  </section>
+
+

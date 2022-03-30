@@ -1,0 +1,12 @@
+<section class="c-profile" *ngIf="skater">
+<img src="{{skater.image}}" alt="">
+<p class="b-text">Name: {{skater.name}}</p>
+<p class="b-text b-text--s">Age: {{skater.age}} Years old</p>
+<p class="b-text b-text--s">Hometown: {{skater.hometown}}</p>
+<div>
+  <button (click)="onUpdate(skater)" routerLink="/contact">Edit</button>
+  <img src="../../../../assets/trash.png" alt="trash" class="b-trash" (click)="onDelete(skater._id)" routerLink='/skaters'>
+</div>
+</section>
+
+

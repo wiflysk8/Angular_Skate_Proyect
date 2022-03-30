@@ -1,0 +1,12 @@
+<section>
+  <div class="d-flex justify-content-center">
+    <input type="text" placeholder="Search Skater  🛹" [(ngModel)] ="filterSkater" name="filterSkater">
+  </div>
+<div class="row">
+<figure class="col-12 col-md-6 col-lg-3" *ngFor="let item of gallery | filter:filterSkater" routerLink="/{{item.category}}/{{item.id}}">
+  <figcaption class="b-text"><h3>{{item.name}}</h3></figcaption>
+  <img src="{{item.image}}" alt="">
+  <button>View Profile</button>
+</figure>
+</div>
+</section>

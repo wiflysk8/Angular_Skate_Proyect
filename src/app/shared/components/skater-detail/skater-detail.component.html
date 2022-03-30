@@ -1,0 +1,7 @@
+<div class="c-product-detail" *ngIf = newSkater>
+<img class="c-product-detail__img" *ngIf = newSkater.image  src="{{newSkater?.image}}" alt="photo">
+<p class="c-product-detail__name" *ngIf = newSkater.name>Name: {{newSkater?.name}}</p>
+<p class="c-product-detail__name" *ngIf = newSkater.age>Age: {{newSkater?.age}}</p>
+<p class="c-product-detail__name" *ngIf = newSkater.hometown>Hometown: {{newSkater?.hometown}}</p>
+<p class="c-product-detail__name" *ngIf = newSkater.id>ID: {{newSkater?.id}}</p>
+</div>

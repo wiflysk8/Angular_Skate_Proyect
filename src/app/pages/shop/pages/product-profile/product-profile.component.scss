@@ -1,0 +1,42 @@
+.c-profile{
+  margin: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  img{
+    width: 400px;
+    height: 400px;
+  }
+  p{
+    margin: 4px;
+  }
+
+}
+
+div{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 400px;
+  gap: 200px;
+  .b-trash{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+  }
+  button{
+    background-color: white;
+    color: red;
+    font-weight: bold;
+    border-radius: 6px;
+    width: 80px;
+    height: 30px;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    &:hover{
+      background-color: red;
+      color: white;
+    }
+  }
+}

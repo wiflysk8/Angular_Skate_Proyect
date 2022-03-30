@@ -1,0 +1,27 @@
+section {
+  margin: 0px 14px;
+}
+button {
+  width: 120px;
+  height: 30px;
+  margin: 18px;
+  cursor: pointer;
+  background-color: white;
+  color: red;
+  font-weight: bold;
+  border-radius: 6px;
+  transition: all 0.5s ease-in-out;
+  &:hover {
+    background-color: red;
+    color: white;
+  }
+}
+.thrash {
+  width: 30px;
+  height: 30px;
+  border-radius: 0%;
+  box-shadow: 2px 2px 0px white;
+  &:hover {
+    transform: scale(1);
+  }
+}
