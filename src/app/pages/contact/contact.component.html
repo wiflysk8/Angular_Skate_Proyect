@@ -1,23 +1,61 @@
-<section>
-  <div class= "c-gestion">
-    <div class="c-gestion__left">
-      <h2 class="b-text b-text--l">ADD ITEM TO DATABASE</h2>
-      <form (ngSubmit)="onSubmit()" [formGroup]="gestionForm">
-        <select name="category" formControlName="category" (change)="selectInput($event)" placeholder="Select an option">
-          <option value="" >Select an option</option>
-          <option value="skaters">Skater</option>
-          <option value="shop">Shop Product</option>
-        </select>
-        <input type="text" id="both" formControlName="name" placeholder="Nombre*" >
-        <input type="number" id="onlysk8" formControlName="age" placeholder="Edad*" *ngIf="!isShopSelected">
-        <input type="text" id="both" formControlName="image" placeholder="Ruta de la imagen">
-        <input type="text" id="onlysk8" formControlName="hometown" placeholder="Nacionalidad" *ngIf="!isShopSelected" >
-        <input type="number" id="both" formControlName="id" placeholder="ID*">
-        <button>Guardar</button>
-      </form>
-    </div>
-    <div class="c-gestion__right">
-        <app-skater-detail [newSkater]="newSkater"></app-skater-detail>
+<section class="container">
+  <div class="row">
+    <div class="c-gestion">
+      <div class="col-6">
+        <div class="c-gestion__left">
+          <h2 class="b-text b-text--l">ADD ITEM TO DATABASE</h2>
+          <form (ngSubmit)="onSubmit()" [formGroup]="gestionForm">
+            <select
+              name="category"
+              formControlName="category"
+              (change)="selectInput($event)"
+              placeholder="Select an option"
+            >
+              <option value="">Select an option</option>
+              <option value="skaters">Skater</option>
+              <option value="shop">Shop Product</option>
+            </select>
+            <input
+              type="text"
+              id="both"
+              formControlName="name"
+              placeholder="Nombre*"
+            />
+            <input
+              type="number"
+              id="onlysk8"
+              formControlName="age"
+              placeholder="Edad*"
+              *ngIf="!isShopSelected"
+            />
+            <input
+              type="text"
+              id="both"
+              formControlName="image"
+              placeholder="Ruta de la imagen"
+            />
+            <input
+              type="text"
+              id="onlysk8"
+              formControlName="hometown"
+              placeholder="Nacionalidad"
+              *ngIf="!isShopSelected"
+            />
+            <input
+              type="number"
+              id="both"
+              formControlName="id"
+              placeholder="ID*"
+            />
+            <button>Guardar</button>
+          </form>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="c-gestion__right">
+          <app-skater-detail [newSkater]="newSkater"></app-skater-detail>
+        </div>
+      </div>
     </div>
   </div>
-  </section>
+</section>
