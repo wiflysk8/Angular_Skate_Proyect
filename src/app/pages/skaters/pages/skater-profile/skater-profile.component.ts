@@ -33,15 +33,10 @@ export class SkaterProfileComponent implements OnInit {
   }
 
   onDelete(id:any){
-    window.confirm("Are you sure you want to delete this element?");
-    if (confirm("Done!")) {
+    if (confirm("Do you want to delete this item?")) {
+      window.confirm("Done");
       this.skatersService.deleteSkater(id).subscribe(()=>{
-        this.router.navigate(['/skaters'])});
-
-      //window.history.back();
-    }else{
-      //window.alert("Delete aborted");
-      this.router.navigate(['/skaters']);
+        this.router.navigate(['/skaters'])});      //window.history.back();
     }
   }
 
