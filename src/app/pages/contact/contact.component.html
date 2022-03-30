@@ -1,7 +1,7 @@
 <section class="container">
   <div class="row">
     <div class="c-gestion">
-      <div class="col-6">
+      <div class="col-8 col-md-6 col-lg-6">
         <div class="c-gestion__left">
           <h2 class="b-text b-text--l">ADD ITEM TO DATABASE</h2>
           <form (ngSubmit)="onSubmit()" [formGroup]="gestionForm">
@@ -51,7 +51,7 @@
           </form>
         </div>
       </div>
-      <div class="col-6">
+      <div class="col-4 col-md-6 col-lg-6">
         <div class="c-gestion__right">
           <app-skater-detail [newSkater]="newSkater"></app-skater-detail>
         </div>
