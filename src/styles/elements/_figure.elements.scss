@@ -23,9 +23,8 @@ figure{
     cursor: pointer;
     box-shadow: 2px 2px 12px gray;
     transition: all 0.3s ease-in-out;
-    &:hover {
-      //transform: scale(1.15);
-      //box-shadow: 4px -4px 12px rgba(211, 20, 20, 0.37);
+      &:hover {
+        filter:saturate(110%);
       -moz-box-shadow: 0 0 12px rgb(161, 37, 37);
       -webkit-box-shadow: 0 0 12px rgb(151, 12, 12);
       box-shadow: 0 0 12px rgb(146, 12, 12);
