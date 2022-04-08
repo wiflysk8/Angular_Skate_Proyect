@@ -9,6 +9,7 @@ figure{
   overflow: hidden;
   min-width: 274px;
   transition: all 0.4s ease-in-out;
+  border-radius: 4px;
 
     &:hover{
       filter:saturate(110%);
