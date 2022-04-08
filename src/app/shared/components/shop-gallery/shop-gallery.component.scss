@@ -1,5 +1,5 @@
 section {
-  margin: 0px 14px;
+  margin: 0px 20px;
 }
 button {
   width: 120px;
@@ -10,7 +10,7 @@ button {
   color: red;
   font-weight: bold;
   border-radius: 6px;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.3s ease-in-out;
   &:hover {
     background-color: red;
     color: white;

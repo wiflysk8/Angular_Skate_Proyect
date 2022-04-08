@@ -13,18 +13,17 @@ section{
     color: red;
     font-weight: bold;
     border-radius: 6px;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.3s ease-in-out;
     &:hover{
       background-color: red;
       color: white;
     }
   }
   input{
-    margin: 10px 0px 10px 0px;
-    width: 95vw;
+    margin: 0px 0px 14px 0px;
+    width: 98vw;
     height: 30px;
     padding-left: 30px;
-    border: none;
     border: 1px solid gray;
     border-radius: 4px;
     font-size: 16px;
@@ -32,7 +31,8 @@ section{
   }
   i{
     position: relative;
-    left: 20px;
+    left: 10px;
+    top: 24px;
   }
 
   }
