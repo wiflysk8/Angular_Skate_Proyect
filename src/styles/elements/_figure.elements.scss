@@ -4,7 +4,7 @@ figure{
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  //box-shadow: 2px 2px 12px gray;
+  box-shadow: 2px 2px 12px gray;
   margin: 0px;
   overflow: hidden;
   min-width: 274px;
@@ -21,7 +21,7 @@ figure{
     border-radius: 10px;
     margin-bottom: 40px;
     cursor: pointer;
-    box-shadow: 2px 2px 12px gray;
+   // box-shadow: 2px 2px 12px gray;
     transition: all 0.3s ease-in-out;
       &:hover {
         filter:saturate(110%);
