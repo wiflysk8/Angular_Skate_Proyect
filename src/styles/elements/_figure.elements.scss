@@ -8,13 +8,20 @@ figure{
   margin: 0px;
   overflow: hidden;
   min-width: 274px;
-  h3{
+  transition: all 0.4s ease-in-out;
+
     &:hover{
+      filter:saturate(110%);
+      -moz-box-shadow: 0 0 12px rgb(161, 37, 37);
+      -webkit-box-shadow: 0 0 12px rgb(151, 12, 12);
+      box-shadow: 0 0 12px rgb(146, 12, 12);
+      h3{
       color: red;
       cursor: pointer;
       transition: all 0.4s ease-in-out;
     }
-  }
+    }
+
   img{
     width: 250px;
     height: 250px;
@@ -23,12 +30,7 @@ figure{
     cursor: pointer;
    // box-shadow: 2px 2px 12px gray;
     transition: all 0.3s ease-in-out;
-      &:hover {
-        filter:saturate(110%);
-      -moz-box-shadow: 0 0 12px rgb(161, 37, 37);
-      -webkit-box-shadow: 0 0 12px rgb(151, 12, 12);
-      box-shadow: 0 0 12px rgb(146, 12, 12);
-    }
+
   }
 
 }

@@ -21,13 +21,18 @@ section{
   }
   input{
     margin: 10px 0px 10px 0px;
-    width: 120px;
-    height: 20px;
+    width: 95vw;
+    height: 30px;
+    padding-left: 30px;
     border: none;
-    border-bottom: 1px solid gray;
+    border: 1px solid gray;
+    border-radius: 4px;
+    font-size: 16px;
+    outline: none;
   }
   i{
-    margin: 10px;
+    position: relative;
+    left: 20px;
   }
 
   }
