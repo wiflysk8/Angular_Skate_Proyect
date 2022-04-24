@@ -19,6 +19,6 @@ export class ShopService {
   }
 
   deleteShop(id: any) {
-    return this.http.delete('https://backend-skate-app.vercel.app/shop' + id);
+    return this.http.delete('https://backend-skate-app.vercel.app/shop/' + id);
   }
 }

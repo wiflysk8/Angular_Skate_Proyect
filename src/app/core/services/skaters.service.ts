@@ -29,7 +29,7 @@ export class SkatersService {
 
   deleteSkater(id: any) {
     return this.http.delete(
-      'https://backend-skate-app.vercel.app/skaters' + id
+      'https://backend-skate-app.vercel.app/skaters/' + id
     );
   }
 
@@ -40,14 +40,14 @@ export class SkatersService {
 
   putSkater(editedSkater: any, skaterId: any) {
     return this.http.put(
-      'https://https://backend-skate-app.vercel.app/skater/' + skaterId,
+      'https://backend-skate-app.vercel.app/skaters/' + skaterId,
       editedSkater
     );
   }
 
   filteredSkater(skater: any) {
     return this.http.get(
-      'https://https://backend-skate-app.vercel.app/skater/name/' + skater
+      'https://backend-skate-app.vercel.app/skaters/name/' + skater
     );
   }
 }

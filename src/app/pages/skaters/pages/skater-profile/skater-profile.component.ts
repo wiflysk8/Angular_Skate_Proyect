@@ -14,17 +14,16 @@ export class SkaterProfileComponent implements OnInit {
   constructor(
     private route: ActivatedRoute,
     private skatersService: SkatersService,
-    private router:Router
+    private router: Router
   ) {}
-
 
   ngOnInit(): void {
     this.skatersService.getSkaters().subscribe((res: any) => {
-       this.skaters = res;
+      this.skaters = res;
       this.route.paramMap.subscribe((params) => {
         const idSkater = Number(params.get('idSkater'));
         for (this.skater of this.skaters) {
-          if( this.skater.id == idSkater) {
+          if (this.skater.id == idSkater) {
             return this.skater;
           }
         }
@@ -32,18 +31,18 @@ export class SkaterProfileComponent implements OnInit {
     });
   }
 
-  onDelete(id:any){
-    if (window.confirm("Do you want to delete this item?")) {
-      confirm("Skater deleted");
-      this.skatersService.deleteSkater(id).subscribe(()=>{
-        this.router.navigate([`/skaters`])});      //window.history.back();
-    }else{
-      confirm("Delete Cancelled");
+  onDelete(id: any) {
+    if (window.confirm('Do you want to delete this item?')) {
+      confirm('Skater deleted');
+      this.skatersService.deleteSkater(id).subscribe(() => {
+        this.router.navigate([`/skaters`]);
+      }); //window.history.back();
+    } else {
+      confirm('Delete Cancelled');
     }
   }
 
-  onUpdate (item: any){
+  onUpdate(item: any) {
     this.skatersService.updateInfo(item);
   }
-
 }
