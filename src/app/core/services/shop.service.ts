@@ -2,22 +2,20 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class ShopService {
+  constructor(private http: HttpClient) {}
 
-  constructor(private http: HttpClient) { }
+  getProducts() {
+    return this.http.get('https://backend-skate-app.vercel.app');
+  }
 
-  getProducts(){
-    return this.http.get("https://proyect-node-sage.vercel.app/skate")
-    }
+  postShop(newSkater: any) {
+    return this.http.post('https://backend-skate-app.vercel.app', newSkater);
+  }
 
-    postShop(newSkater: any){
-      return this.http.post("https://proyect-node-sage.vercel.app/skate", newSkater)
-    }
-
-    deleteShop(id:any){
-      return this.http.delete("https://proyect-node-sage.vercel.app/skate/" + id);
-    }
-
+  deleteShop(id: any) {
+    return this.http.delete('https://backend-skate-app.vercel.app' + id);
+  }
 }
